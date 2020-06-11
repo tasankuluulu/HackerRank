@@ -20,7 +20,7 @@ public class ArrayCounters {
 				num13 = 0, num14 = 0, num15 = 0, num16 = 0, num17 = 0, num18 = 0, num19 = 0, num20 = 0;
 		
 		
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < array.length; i++) {
 			if (array[i] == 1) {
 				num1++;
 			} else if (array[i] == 2) {
@@ -62,8 +62,9 @@ public class ArrayCounters {
 			} else if (array[i] == 20) {
 				num20++;
 			}
-			System.out.printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14, num15, num16, num17, num18, num19, num20);
+			
 		}
+		System.out.printf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14, num15, num16, num17, num18, num19, num20);
 
 		scanner.close();
 
