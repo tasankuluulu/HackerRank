@@ -17,5 +17,6 @@ public class ArratCounterOtherWay {
 		for (int i : counterList) {
 			System.out.print(i + " ");
 		}
+		in.close();
 	}
 }

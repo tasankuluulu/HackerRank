@@ -15,6 +15,7 @@ public class ArraysDS {
 		for (int i = 1; i < array.length + 1; i++) {
 			System.out.print(array[array.length - i] + " ");
 		}
+		scanner.close();
 	}
 
 }
