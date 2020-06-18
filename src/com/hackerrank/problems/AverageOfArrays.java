@@ -17,6 +17,7 @@
 //
 //			for (i = 0; i < numOfLines; i++) {
 //				int sum = 0;
+<<<<<<< HEAD
 //				do {
 //					num = scanner.nextInt();
 //					array[i] = num;
@@ -30,3 +31,18 @@
 //			scanner.close();
 //		}
 //	}
+=======
+////				do {
+////					num = scanner.nextInt();
+////					array[i] = num;
+////					sum += array[i];
+////				} while (num > 0);
+////				int avg = sum / (array.length-1);
+////				System.out.print(avg + " ");
+////				ArrayList <Integer> list = new ArrayList <>();
+////				
+////			}
+////			scanner.close();
+////		}
+////	}
+>>>>>>> 2ba4b0fe47dac85b28ade8bf6bd27197dee437d5
