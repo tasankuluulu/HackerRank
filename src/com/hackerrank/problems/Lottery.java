@@ -25,6 +25,7 @@ public class Lottery {
 				System.err.println("Invalid input. Enter any number from 1 to 20 only! Enter one more time.");
 				String str = scanner.next();
 			}
+
 		}
 		scanner.close();
 
