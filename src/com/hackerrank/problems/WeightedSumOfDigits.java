@@ -11,6 +11,10 @@ public class WeightedSumOfDigits {
 
 		for (int i = 0; i < numOfCases; i++) {
 			int num = scanner.nextInt();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 989a3b8e30c854edadaa41ee48d112b3bf9d9586
 			ArrayList<Integer> array = new ArrayList<>();
 			int result = 0;
 
@@ -25,7 +29,13 @@ public class WeightedSumOfDigits {
 				result += mult;
 			}
 			System.out.print(result + " ");
+<<<<<<< HEAD
 			System.out.println();
+=======
+
+			System.out.println();
+
+>>>>>>> 989a3b8e30c854edadaa41ee48d112b3bf9d9586
 		}
 
 		scanner.close();
