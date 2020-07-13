@@ -11,9 +11,9 @@ public class LeftRotation {
 		for (int i  = 0; i < array.length; i ++) {
 			array[i] = scan.nextInt();
 		}
-		for (int i = numRoration; i < array.length + numRoration; i++) {
-			array[] 
-		}
+//		for (int i = numRoration; i < array.length + numRoration; i++) {
+//			array[] ;
+//		}
 		
 		scan.close();
 	}

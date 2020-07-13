@@ -1,6 +1,5 @@
 package com.hackerrank.problems;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortWithIndexes {

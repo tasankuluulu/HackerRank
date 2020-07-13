@@ -17,10 +17,6 @@
 //
 //			for (i = 0; i < numOfLines; i++) {
 //				int sum = 0;
-<<<<<<< HEAD
-=======
-
->>>>>>> 989a3b8e30c854edadaa41ee48d112b3bf9d9586
 //				do {
 //					num = scanner.nextInt();
 //					array[i] = num;
@@ -34,10 +30,6 @@
 //			scanner.close();
 //		}
 //	}
-<<<<<<< HEAD
-=======
-
->>>>>>> 989a3b8e30c854edadaa41ee48d112b3bf9d9586
 ////				do {
 ////					num = scanner.nextInt();
 ////					array[i] = num;
@@ -51,7 +43,4 @@
 ////			scanner.close();
 ////		}
 ////	}
-<<<<<<< HEAD
-=======
 
->>>>>>> 989a3b8e30c854edadaa41ee48d112b3bf9d9586
