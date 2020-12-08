@@ -17,7 +17,6 @@
 //
 //			for (i = 0; i < numOfLines; i++) {
 //				int sum = 0;
-
 //				do {
 //					num = scanner.nextInt();
 //					array[i] = num;
@@ -31,7 +30,6 @@
 //			scanner.close();
 //		}
 //	}
-
 ////				do {
 ////					num = scanner.nextInt();
 ////					array[i] = num;
