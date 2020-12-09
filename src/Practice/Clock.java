@@ -2,7 +2,8 @@ package Practice;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Scanner;
+import java.util.Map.Entry;
+import java.util.Set;
 
 public class Clock {
 
@@ -78,25 +79,16 @@ public class Clock {
 		} else {
 			newTime = hours + ":" + minutes + " " + timePeriod;
 		}
-
 		System.out.println(newTime);
 	}
-
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-
-		Map<String, Integer> examples = new LinkedHashMap<>();
-		examples.put("9:10 AM", 200);
-		examples.put("12:35 PM", 25);
-		examples.put("12:00 AM", 5);
-		examples.put("1:25 PM", 45);
-
-		/** Storing the given time */
-		String givenTime = scan.nextLine();
-
-		/** Storing the minutes needed to add */
-		int minutesToAdd = scan.nextInt();
-
+	
+	/** 
+	 * Method to add given minutes to the given time and print new time
+	 * @param givenTime
+	 * @param minutesToAdd
+	 */
+	public static void AddTime(String givenTime, int minutesToAdd) {
+		
 		/** Converting time into seconds */
 		int timeInSeconds = ConvertTimeToSeconds(givenTime);
 
@@ -105,5 +97,26 @@ public class Clock {
 
 		/** Converting the result into regular time */
 		ConvertSecondsToRegularTime(timeInSeconds);
+	}
+
+	public static void main(String[] args) {
+		/** Creating some examples to test */
+		Map<String, Integer> examples = new LinkedHashMap<>();
+		examples.put("9:10 AM", 200);
+		examples.put("12:35 PM", 25);
+		examples.put("1:00 am", 5);
+		examples.put("1:25 PM", 45);
+
+		String givenTime = null;
+		int minutesToAdd = 0;
+		
+		
+		Set<Entry<String, Integer>> set = examples.entrySet();
+		for (Entry<String, Integer> entry : set) {
+			givenTime = entry.getKey();
+			minutesToAdd = entry.getValue();
+			AddTime(givenTime, minutesToAdd);
+		}
+
 	}
 }
