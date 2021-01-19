@@ -1,21 +1,21 @@
 package com.hackerrank.problems;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class Anagrams {
 	static boolean isAnagram(String a, String b) {
 		boolean isAnagram = true;
 		a = a.toLowerCase();
 		b = b.toLowerCase();
-		Set<Character> set = new LinkedHashSet<>();
+		if(a.length() != b.length()) {
+			isAnagram = false;
+			return isAnagram;
+		}
+		java.util.LinkedHashSet<Character> set = new java.util.LinkedHashSet<>();
 		for (int i = 0; i < a.length(); i++) {
 			set.add(a.charAt(i));
 		}
-		Iterator<Character> it = set.iterator();
+		java.util.Iterator<Character> it = set.iterator();
 		while (it.hasNext()) {
 			int count1 = 0;
 			int count2 = 0;
@@ -24,21 +24,17 @@ public class Anagrams {
 				if (letter == a.charAt(i)) {
 					count1++;
 				}
-
 			}
 			for (int n = 0; n < b.length(); n++) {
 				if (letter == b.charAt(n)) {
 					count2++;
 				}
-
 			}
 			if (count1 != count2) {
 				isAnagram = false;
 				break;
 			}
-
 		}
-
 		return isAnagram;
 	}
 
@@ -54,5 +50,4 @@ public class Anagrams {
 		}
 		scan.close();
 	}
-
 }
